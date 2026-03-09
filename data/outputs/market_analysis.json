@@ -1,0 +1,54 @@
+[
+  {
+    "competitor": "Dominos",
+    "event_type": "promotion",
+    "competitor_price": 299,
+    "user_price": 350,
+    "price_difference": -51,
+    "opportunity_score": 8.5,
+    "impact_level": "high",
+    "insight": "Dominos promotion offers a significantly lower price (₹299 vs your ₹350) and may attract price-sensitive customers. Immediate response recommended.",
+    "timestamp": "2026-03-09T10:30:00",
+    "offer": "Buy 1 Get 1",
+    "product": "Farmhouse Pizza"
+  },
+  {
+    "competitor": "Pizza Hut",
+    "event_type": "discount",
+    "competitor_price": 199,
+    "user_price": 350,
+    "price_difference": -151,
+    "opportunity_score": 10.0,
+    "impact_level": "high",
+    "insight": "Pizza Hut discount offers a significantly lower price (₹199 vs your ₹350) and may attract price-sensitive customers. Immediate response recommended.",
+    "timestamp": "2026-03-09T11:00:00",
+    "offer": "30% off",
+    "product": "Margherita Pizza"
+  },
+  {
+    "competitor": "Papa John's",
+    "event_type": "launch",
+    "competitor_price": 399,
+    "user_price": 350,
+    "price_difference": 49,
+    "opportunity_score": 6.0,
+    "impact_level": "medium",
+    "insight": "Papa John's launch creates market movement. Evaluate if product refresh or promotional response is needed.",
+    "timestamp": "2026-03-09T12:00:00",
+    "offer": "New product launch",
+    "product": "Supreme Pizza"
+  },
+  {
+    "competitor": "Local Pizza Co",
+    "event_type": "price_update",
+    "competitor_price": 249,
+    "user_price": 350,
+    "price_difference": -101,
+    "opportunity_score": 7.5,
+    "impact_level": "medium",
+    "insight": "Local Pizza Co is moderately cheaper (₹101 difference) with price_update. Notable competitive activity that warrants monitoring and potential response.",
+    "timestamp": "2026-03-09T13:00:00",
+    "offer": "",
+    "product": "Cheese Pizza"
+  }
+]
