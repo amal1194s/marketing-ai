@@ -124,6 +124,18 @@ def main():
     print("Scout Agent execution completed successfully!")
     print("=" * 80)
 
+    # run strategist agent if market analysis exists
+    try:
+        from agents import strategist_agent
+        analysis_path = strategist_agent.MARKET_ANALYSIS_PATH
+        if analysis_path.exists():
+            print("\nRunning Strategist Agent based on existing market analysis...")
+            strategist_agent.main()
+        else:
+            print("\nNo market analysis file found; skipping strategist execution.")
+    except ImportError:
+        print("\nStrategist agent not available.")
+
 
 if __name__ == "__main__":
     main()
