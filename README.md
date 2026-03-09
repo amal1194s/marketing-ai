@@ -1,32 +1,223 @@
-# Marketing AI - Market Intelligence System
+# Marketing AI - ScoutIQ Market Intelligence System
 
-A multi-agent AI system for analyzing competitor activity and market intelligence for small businesses.
+A multi-agent AI system for monitoring competitors and generating actionable market intelligence for small businesses.
 
-## Overview
+## 🎯 Overview
 
-This system uses multiple specialized agents to monitor competitors and provide strategic insights:
+ScoutIQ uses specialized AI agents working together to provide complete market intelligence:
 
-- **Agent A: The Scout** - Discovers and collects competitor data
-- **Agent B: The Analyst** - Analyzes competitor impact on your business ✅ **IMPROVED**
-- **Agent C: The Strategist** - Recommends actions based on analysis
+- **🔍 Scout Agent** - Monitors and collects competitor signals ✅ **COMPLETE**
+- **📊 Analyst Agent** - Analyzes threats with Market Opportunity Scores (0-10) ✅ **COMPLETE**
+- **🎯 Strategist Agent** - Recommends strategic actions (Coming Soon)
 
-## What's New in Agent B (v2)
+## System Pipeline
 
-🎯 **More Strategic** - Priority-ranked insights with specific actions and timeframes  
-🔍 **Smarter Detection** - Automatically detects aggressive offers using advanced pattern matching  
-💰 **Better Pricing Analysis** - Identifies cheapest/most expensive competitors with strategic context  
-📊 **Clearer Insights** - Every insight includes specific numbers, competitor names, and recommendations  
-🛡️ **Rock Solid** - Always returns valid JSON, handles all edge cases gracefully
+```
+Scout Agent (Data Collection)
+    ↓
+data/outputs/competitor_signals.json
+    ↓
+Analyst Agent (Threat Analysis + Opportunity Scoring)
+    ↓
+data/outputs/market_analysis.json
+    ↓
+Strategist Agent (Action Planning)
+```
 
-[See detailed improvements →](IMPROVEMENTS.md)
+---
 
-## Agent B: The Analyst
+## 🔍 Scout Agent - Competitor Monitoring
 
-### Purpose
-Evaluates how competitor activity affects your business and identifies strategic risks and opportunities.
+### Overview
+Monitors competitor activities and extracts business signals from multiple sources.
+
+### Key Features
+- ✅ Multi-Source Monitoring (websites, APIs, social media, text feeds)
+- ✅ Event Detection (promotions, discounts, bundles, price changes, new products, campaigns)
+- ✅ Price Extraction from text and structured data
+- ✅ Batch Processing for multiple signals
+- ✅ Structured JSON Output
+
+### Quick Usage
+
+```python
+from agents.scout_agent import ScoutAgent
+
+agent = ScoutAgent()
+text = "Dominos launched Buy 1 Get 1 offer on Pizza at ₹299"
+signals = agent.process_text(text, competitor="Dominos", source="website")
+agent.export_signals("data/outputs/competitor_signals.json")
+```
+
+---
+
+## 📊 Analyst Agent - Market Opportunity Scoring
+
+### What's New: Market Opportunity Score (0-10)
+
+🎯 **Quantified Threats** - Each competitor signal gets a 0-10 score  
+📈 **Smart Scoring** - Based on price differences, event types, and market conditions  
+🎨 **Visual Console** - Color-coded output (🔴 HIGH, 🟡 MEDIUM, 🟢 LOW)  
+💡 **Strategic Insights** - Actionable recommendations for each threat
+
+### Opportunity Score Logic
+
+```
+Base Score: 5
++ Price Advantage (if competitor cheaper):
+  0-10%: +0.5  |  10-20%: +1.5  |  20-30%: +2.5  |  >30%+3.0
++ Event Bonus: promotion/discount +2 | launch +1
++ Extreme Discount (>30% cheaper): +3
+= Total (capped at 10)
+```
+
+**Impact Mapping:** 8-10 = 🔴 HIGH | 5-7 = 🟡 MEDIUM | 0-4 = 🟢 LOW
+
+### Quick Usage
+
+```python
+from agents.analyst_agent import run_analyst_agent, calculate_opportunity_score
+
+# Run full analysis
+results = run_analyst_agent()
+
+# Calculate custom score
+signal = {"competitor": "Dominos", "price": 299, "event_type": "promotion"}
+business = {"price": 350}
+score = calculate_opportunity_score(signal, business)
+print(f"Score: {score}/10")  # 8.5/10
+```
+
+### Example Output
+
+**Terminal:**
+```
+  1. 🔴 Dominos - Score: 8.5/10 (HIGH Impact)
+  2. 🔴 Pizza Hut - Score: 10.0/10 (HIGH Impact)
+  3. 🟡 Papa John's - Score: 6.0/10 (MEDIUM Impact)
+```
+
+**JSON (data/outputs/market_analysis.json):**
+```json
+{
+  "competitor": "Dominos",
+  "opportunity_score": 8.5,
+  "impact_level": "high",
+  "price_difference": -51,
+  "insight": "Dominos promotion creates strong competitive pressure..."
+}
+```
+
+---
+
+## 🚀 Quick Start
+
+### Installation
+
+```bash
+cd marketing-ai
+pip install -r requirements.txt  # For Scout Agent
+# Analyst Agent uses pure Python stdlib (no dependencies)
+```
+
+### Run Complete Pipeline
+
+```bash
+# Step 1: Scout collects data
+python main.py
+
+# Step 2: Analyst analyzes threats
+python agents/analyst_agent.py
+```
+
+### Run Tests
+
+```bash
+# Scout Agent
+python -m pytest tests/ -v
+
+# Analyst Agent
+python test_opportunity_score.py  # 21/21 tests passing ✅
+```
+
+---
+
+## 📁 Project Structure
+
+```
+marketing-ai/
+├── agents/
+│   ├── scout_agent/              # Scout module
+│   └── analyst_agent.py          # Analyst with opportunity scoring
+├── data/
+│   ├── inputs/
+│   │   └── business_profile.json
+│   └── outputs/
+│       ├── competitor_signals.json    # Scout → Analyst  
+│       └── market_analysis.json       # Analyst output
+├── tests/
+│   └── test_scout_agent.py
+├── test_opportunity_score.py
+├── main.py
+└── README.md
+```
+
+---
+
+## 📖 Documentation
+
+**Scout Agent:**
+- ARCHITECTURE.md
+- SCOUT_AGENT_PROMPT.md
+- PROJECT_SUMMARY.md
+
+**Analyst Agent:**
+- README_OPPORTUNITY_SCORE.md
+- OPPORTUNITY_SCORE_EXAMPLES.md
+- ANALYST_IMPLEMENTATION.md
+
+---
+
+## ✨ Features
+
+### Scout Agent
+✅ Multi-source monitoring  
+✅ 6 event types detected  
+✅ Price extraction  
+✅ Batch processing
+
+### Analyst Agent
+✅ Market Opportunity Scores (0-10)  
+✅ Smart threat classification  
+✅ Price-based scoring  
+✅ Actionable insights  
+✅ 100% test coverage
+
+---
+
+## 🛣️ Roadmap
+
+**Completed** ✅
+- Scout Agent with multi-source monitoring
+- Analyst Agent with Market Opportunity Scores
+- Complete test coverage
+
+**In Progress** 🚧
+- Strategist Agent
+- Real-time monitoring dashboard
+
+**Planned** 📋
+- Automated alert system
+- Historical trend analysis
+- Mobile app integration
+
+---
+
+## Purpose
+Evaluates how competitor activity affects your business and identifies strategic risks and opportunities using Market Opportunity Scores.
 
 ### What It Analyzes
-- **Price Differences** - Compares your pricing against competitors
+- **Price Differences** - Calculates opportunity scores  based on competitor pricing
 - **Promotions & Offers** - Identifies aggressive competitor promotions
 - **Product Launches** - Tracks new products and bundles
 - **Target Audience** - Measures customer overlap with competitors

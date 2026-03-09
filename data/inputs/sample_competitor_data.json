@@ -1,0 +1,47 @@
+[
+  {
+    "competitor": "Dominos",
+    "product": "Peppy Paneer Pizza",
+    "event_type": "promotion",
+    "price": "399",
+    "offer": "Buy 1 Get 1 Free",
+    "source": "website",
+    "summary": "Dominos launched a Buy 1 Get 1 offer on Peppy Paneer Pizza priced at ₹399."
+  },
+  {
+    "competitor": "Pizza Hut",
+    "product": "Chicken Supreme",
+    "event_type": "discount",
+    "price": "299",
+    "offer": "40% off on orders above ₹500",
+    "source": "mobile_app",
+    "summary": "Pizza Hut offers 40% discount on Chicken Supreme when order value exceeds ₹500."
+  },
+  {
+    "competitor": "Subway",
+    "product": "Veggie Delite",
+    "event_type": "new_product",
+    "price": "120",
+    "offer": "",
+    "source": "social_media",
+    "summary": "Subway introduces new Veggie Delite sub sandwich at ₹120."
+  },
+  {
+    "competitor": "KFC",
+    "product": "Zinger Burger Meal",
+    "event_type": "bundle_offer",
+    "price": "199",
+    "offer": "Burger + Fries + Drink combo",
+    "source": "website",
+    "summary": "KFC launches combo meal with Zinger Burger, fries and drink at ₹199."
+  },
+  {
+    "competitor": "McDonald's",
+    "product": "McSpicy Chicken",
+    "event_type": "price_change",
+    "price": "149",
+    "offer": "",
+    "source": "api",
+    "summary": "McDonald's reduced price of McSpicy Chicken from ₹169 to ₹149."
+  }
+]
