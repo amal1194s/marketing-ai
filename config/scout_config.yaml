@@ -1,0 +1,40 @@
+# Scout Agent Configuration
+
+agent:
+  name: "Scout Agent"
+  version: "1.0.0"
+  description: "Monitors competitor sources and extracts business intelligence signals"
+
+# Event types to monitor
+event_types:
+  - price_change
+  - new_product
+  - promotion
+  - discount
+  - marketing_campaign
+  - bundle_offer
+
+# Sources configuration
+sources:
+  enabled:
+    - website
+    - api
+    - file
+    - scraper
+  
+# Extraction settings
+extraction:
+  auto_detect_event_type: true
+  auto_generate_summary: true
+  min_confidence: 0.5
+
+# Output settings
+output:
+  format: json
+  indent: 2
+  include_metadata: true
+  
+# Logging
+logging:
+  level: INFO
+  file: "logs/scout_agent.log"
