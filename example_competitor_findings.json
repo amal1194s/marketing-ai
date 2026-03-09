@@ -1,0 +1,66 @@
+{
+  "competitors": [
+    {
+      "name": "Chain Coffee Co",
+      "pricing": {
+        "average_price": 4.50,
+        "min_price": 2.50,
+        "max_price": 6.50
+      },
+      "promotions": [
+        "Buy one get one 50% off weekdays",
+        "Loyalty rewards program - free drink every 10 purchases"
+      ],
+      "new_offers": [
+        "Student discount 15%"
+      ],
+      "new_products": [
+        "Seasonal pumpkin spice latte",
+        "Cold brew variety pack"
+      ],
+      "bundles": [
+        "Breakfast bundle: coffee + pastry for $7"
+      ],
+      "target_audience": {
+        "demographics": [
+          "young professionals",
+          "families",
+          "students"
+        ],
+        "interests": [
+          "convenience",
+          "coffee",
+          "value for money"
+        ]
+      },
+      "positioning": "Fast, affordable coffee for everyone"
+    },
+    {
+      "name": "Artisan Brew House",
+      "pricing": {
+        "average_price": 6.00,
+        "min_price": 3.50,
+        "max_price": 9.00
+      },
+      "promotions": [],
+      "new_offers": [],
+      "new_products": [
+        "Single-origin Ethiopian roast",
+        "Nitro cold brew on tap"
+      ],
+      "bundles": [],
+      "target_audience": {
+        "demographics": [
+          "coffee enthusiasts",
+          "young professionals"
+        ],
+        "interests": [
+          "specialty coffee",
+          "artisan products",
+          "coffee education"
+        ]
+      },
+      "positioning": "Premium craft coffee experience for connoisseurs"
+    }
+  ]
+}

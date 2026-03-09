@@ -1,0 +1,42 @@
+[
+  {
+    "competitor": "Dominos",
+    "product": "Farmhouse Pizza",
+    "event_type": "promotion",
+    "price": 299,
+    "offer": "Buy 1 Get 1",
+    "source": "website",
+    "summary": "Dominos launched Buy 1 Get 1 offer on Farmhouse Pizza",
+    "timestamp": "2026-03-09T10:30:00"
+  },
+  {
+    "competitor": "Pizza Hut",
+    "product": "Margherita Pizza",
+    "event_type": "discount",
+    "price": 199,
+    "offer": "30% off",
+    "source": "api",
+    "summary": "Pizza Hut offering 30% discount on Margherita Pizza",
+    "timestamp": "2026-03-09T11:00:00"
+  },
+  {
+    "competitor": "Papa John's",
+    "product": "Supreme Pizza",
+    "event_type": "launch",
+    "price": 399,
+    "offer": "New product launch",
+    "source": "social_media",
+    "summary": "Papa John's launched new Supreme Pizza",
+    "timestamp": "2026-03-09T12:00:00"
+  },
+  {
+    "competitor": "Local Pizza Co",
+    "product": "Cheese Pizza",
+    "event_type": "price_update",
+    "price": 249,
+    "offer": "",
+    "source": "website",
+    "summary": "Local Pizza Co updated pricing",
+    "timestamp": "2026-03-09T13:00:00"
+  }
+]
