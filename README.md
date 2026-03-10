@@ -1,35 +1,64 @@
-# Marketing AI - ScoutIQ Market Intelligence System
+# RivalSense AI - Market Intelligence System
 
-A multi-agent AI system for monitoring competitors and generating actionable market intelligence for small businesses.
+**AI-powered market intelligence for small businesses** - Monitor competitors, assess threats, and generate strategies automatically.
 
-## 🎯 Overview
+## 🎯 What is RivalSense AI?
 
-ScoutIQ uses specialized AI agents working together to provide complete market intelligence:
+RivalSense AI is a complete market intelligence platform that helps small businesses compete by:
+- 🔍 **Monitoring** competitors 24/7 (pricing, promotions, campaigns)
+- 🔬 **Analyzing** market threats with quantified scoring (0-10 scale)
+- 🎯 **Strategizing** with AI-generated action plans and marketing content
+- ⚡ **Delivering** results in seconds, not hours or days
 
-- **🔍 Scout Agent** - Monitors and collects competitor signals ✅ **COMPLETE**
-- **📊 Analyst Agent** - Analyzes threats with Market Opportunity Scores (0-10) ✅ **COMPLETE**
-- **🎯 Strategist Agent** - Recommends strategic actions (Coming Soon)
+## 🚀 Quick Start
 
-## System Pipeline
-
+### 1. Install Dependencies
+```bash
+.\install.ps1
 ```
-Scout Agent (Data Collection)
-    ↓
-data/outputs/competitor_signals.json
-    ↓
-Analyst Agent (Threat Analysis + Opportunity Scoring)
-    ↓
-data/outputs/market_analysis.json
-    ↓
-Strategist Agent (Action Planning)
+
+### 2. Start the System
+```bash
+.\start.ps1
 ```
+
+### 3. Open War Room
+Navigate to `http://localhost:3000/war-room` and click "Start Analysis"
+
+**That's it!** Your AI agents will analyze the market and generate strategies.
 
 ---
 
-## 🔍 Scout Agent - Competitor Monitoring
+## 🏗️ Architecture
 
-### Overview
-Monitors competitor activities and extracts business signals from multiple sources.
+### System Pipeline
+
+```
+Scout Agent (Competitor Monitoring)
+    ↓
+Analyst Agent (Threat Analysis)
+    ↓
+Strategist Agent (Strategy Generation)
+    ↓
+Dashboard UI (Results Display)
+```
+
+### Tech Stack
+
+**Backend (Python):**
+- FastAPI for REST API
+- Multi-agent system (Scout, Analyst, Strategist)
+- JSON-based data pipeline
+
+**Frontend (Next.js):**
+- React 18 with TypeScript
+- Tailwind CSS + shadcn/ui
+- Framer Motion animations
+- Real-time War Room visualization
+
+---
+
+## 📊 Agent System
 
 ### Key Features
 - ✅ Multi-Source Monitoring (websites, APIs, social media, text feeds)

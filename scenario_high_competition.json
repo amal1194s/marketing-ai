@@ -1,0 +1,110 @@
+{
+  "competitors": [
+    {
+      "name": "MegaChain Coffee",
+      "pricing": {
+        "average_price": 3.75,
+        "min_price": 2.00,
+        "max_price": 5.50
+      },
+      "promotions": [
+        "Buy one get one free every Thursday",
+        "50% off all drinks 2-4pm daily",
+        "New loyalty app - every 5 drinks get 1 free"
+      ],
+      "new_offers": [
+        "Student discount 25% all day",
+        "Free pastry with any large drink"
+      ],
+      "new_products": [
+        "Oat milk drinks (no upcharge)",
+        "Premium iced coffee line",
+        "Breakfast sandwich combo"
+      ],
+      "bundles": [
+        "Morning bundle: coffee + pastry $6",
+        "Lunch special: sandwich + drink $9"
+      ],
+      "target_audience": {
+        "demographics": [
+          "young professionals",
+          "students",
+          "remote workers",
+          "families"
+        ],
+        "interests": [
+          "convenience",
+          "value for money",
+          "coffee",
+          "quick service"
+        ]
+      },
+      "positioning": "Affordable daily coffee for everyone - fastest service in town"
+    },
+    {
+      "name": "Hipster Brew Bar",
+      "pricing": {
+        "average_price": 6.50,
+        "min_price": 4.00,
+        "max_price": 10.00
+      },
+      "promotions": [],
+      "new_offers": [],
+      "new_products": [
+        "Cold brew on nitro tap",
+        "Single-origin pour-overs",
+        "House-made almond milk"
+      ],
+      "bundles": [],
+      "target_audience": {
+        "demographics": [
+          "young professionals",
+          "coffee enthusiasts",
+          "remote workers"
+        ],
+        "interests": [
+          "specialty coffee",
+          "local business",
+          "artisan products",
+          "Instagram-worthy cafes"
+        ]
+      },
+      "positioning": "Artisanal third-wave coffee experience with award-winning baristas"
+    },
+    {
+      "name": "Fast Fuel Drive-Thru",
+      "pricing": {
+        "average_price": 4.00,
+        "min_price": 2.50,
+        "max_price": 6.00
+      },
+      "promotions": [
+        "Happy hour: $2 any size coffee 6-8am",
+        "Download app get free large coffee"
+      ],
+      "new_offers": [
+        "Subscription: $40/month unlimited coffee"
+      ],
+      "new_products": [
+        "Energy drink coffee blends",
+        "Protein coffee shakes"
+      ],
+      "bundles": [
+        "Commuter deal: coffee + muffin $5"
+      ],
+      "target_audience": {
+        "demographics": [
+          "commuters",
+          "busy professionals",
+          "families"
+        ],
+        "interests": [
+          "speed",
+          "convenience",
+          "drive-thru service"
+        ]
+      },
+      "positioning": "Fastest coffee service - in and out in under 2 minutes"
+    }
+  ]
+}

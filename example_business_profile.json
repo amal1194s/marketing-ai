@@ -1,0 +1,27 @@
+{
+  "name": "Local Coffee Shop",
+  "pricing": {
+    "average_price": 5.50,
+    "min_price": 3.00,
+    "max_price": 8.00
+  },
+  "products": [
+    "Coffee",
+    "Pastries",
+    "Sandwiches",
+    "Tea"
+  ],
+  "target_audience": {
+    "demographics": [
+      "young professionals",
+      "students",
+      "remote workers"
+    ],
+    "interests": [
+      "coffee culture",
+      "local business",
+      "sustainable products"
+    ]
+  },
+  "positioning": "Premium locally-sourced coffee experience with sustainable practices"
+}
