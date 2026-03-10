@@ -1,0 +1,15 @@
+{
+  "name": "foodos",
+  "category": "hotel",
+  "city": "coimbatore",
+  "target_audience": "",
+  "pricing": {
+    "average_price": 0,
+    "range": ""
+  },
+  "location": {
+    "city": "coimbatore"
+  },
+  "positioning": "",
+  "current_offers": ""
+}

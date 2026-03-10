@@ -1,4 +1,12 @@
-"""
+# Start everything
+.\start.ps1
+
+# Or manually:
+# Terminal 1: python api_server.py
+# Terminal 2: cd rivalsense-ui && npm run dev
+
+# Open browser
+start http://localhost:3000/war-room"""
 Main entry point for Scout Agent
 Demonstrates competitor signal extraction and monitoring
 """

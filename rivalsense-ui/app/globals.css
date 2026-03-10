@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&display=swap');
+
+@layer base {
+  :root {
+    /* Premium Black & Gold Theme */
+    --background: 0 0% 7%;           /* Deep charcoal black */
+    --foreground: 45 15% 92%;        /* Warm off-white */
+    
+    --card: 0 0% 10%;                /* Slightly lighter black */
+    --card-foreground: 45 15% 92%;
+    
+    --popover: 0 0% 8%;
+    --popover-foreground: 45 15% 92%;
+    
+    --primary: 45 100% 51%;          /* Rich metallic gold */
+    --primary-foreground: 0 0% 10%;
+    
+    --secondary: 45 35% 20%;         /* Dark bronze */
+    --secondary-foreground: 45 15% 92%;
+    
+    --muted: 0 0% 15%;               /* Muted dark gray */
+    --muted-foreground: 45 8% 65%;   /* Muted light gray */
+    
+    --accent: 45 80% 45%;            /* Warm gold accent */
+    --accent-foreground: 0 0% 10%;
+    
+    --destructive: 0 65% 45%;        /* Muted red */
+    --destructive-foreground: 45 15% 92%;
+    
+    --success: 142 40% 45%;          /* Muted emerald */
+    --success-foreground: 45 15% 92%;
+    
+    --warning: 35 80% 50%;           /* Amber gold */
+    --warning-foreground: 0 0% 10%;
+    
+    --border: 45 15% 18%;            /* Dark gold-tinted border */
+    --input: 0 0% 15%;
+    --ring: 45 100% 51%;
+    
+    --radius: 0.75rem;
+  }
+  
+  /* Luxe gold gradient */
+  .gradient-gold {
+    background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #B8860B 100%);
+  }
+  
+  /* Premium glow effects */
+  .glow-gold {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+  }
+  
+  .glow-gold-strong {
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-optical-sizing: auto;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+  
+  h1 {
+    @apply text-3xl lg:text-4xl font-bold;
+  }
+  
+  h2 {
+    @apply text-2xl lg:text-3xl font-semibold;
+  }
+  
+  h3 {
+    @apply text-xl lg:text-2xl font-semibold;
+  }
+  
+  /* Premium element styles */
+  .luxury-card {
+    @apply bg-card border border-border/50 rounded-lg p-6;
+    @apply shadow-lg transition-all duration-300;
+  }
+  
+  .luxury-card:hover {
+    @apply border-primary/30 glow-gold;
+  }
+  
+  .gold-accent {
+    @apply text-primary font-semibold;
+  }
+  
+  .premium-button {
+    @apply bg-gradient-to-r from-primary via-accent to-primary;
+    @apply text-background font-semibold px-6 py-3 rounded-lg;
+    @apply shadow-lg hover:shadow-xl transition-all duration-300;
+    @apply hover:scale-105 glow-gold;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animate-in {
+    animation: animate-in 0.6s ease-out;
+  }
+  
+  .fade-in {
+    animation: fade-in 0.5s ease-out;
+  }
+  
+  @keyframes animate-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .glass-effect {
+    @apply bg-background/80 backdrop-blur-xl border border-border/50;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-0.5;
+  }
+}

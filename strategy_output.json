@@ -1,0 +1,20 @@
+{
+  "recommended_action": "Launch a limited-time promotion for Tony's Pizza Palace to compete with current competitor offers. Keep base prices unchanged.",
+  "response_type": "promotion_response",
+  "price_action": "Keep base prices. Launch a 15-20% limited-time promotion (2-4 weeks) to match competitor offers.",
+  "campaign_idea": "Feast Mode: Limited Time Offer",
+  "marketing_post": "🔥 FLASH SALE AT TONY'S PIZZA PALACE! 🔥\n\nGet 20% OFF your order this week only! Don't miss out on your favorite pizza restaurant. Limited time. Order now!",
+  "cta": "Claim your discount before it's gone!",
+  "execution_steps": [
+    "Design a 15-20% discount offer for your best-selling items",
+    "Create social media posts and email campaign announcing the promotion",
+    "Set a clear deadline (2-4 weeks) and promote urgency",
+    "Track response rate and sales during promotion period"
+  ],
+  "why_this_strategy": [
+    "Competitors are using promotions as their main tactic",
+    "Promotions are quick to implement and test",
+    "Keeps base prices stable for long-term positioning",
+    "Domino's 50% off promotion poses immediate competitive threat"
+  ]
+}
